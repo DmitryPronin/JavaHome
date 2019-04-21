@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список игр</title>
+</head>
+<body>
+<div>
+    <form method="post">
+        <input type="text" name="articleGame" placeholder="acrticleGame"/>
+        <input type="text" name="codeGame" placeholder="codeGame"/>
+        <button type="submit">Сохранить</button>
+    </form>
+</div>
+<div>
+    <div>Список игр</div>
+    <div>
+        {{#games}}
+        <div>
+            <b>{{id}}</b>
+            <span>{{articleGame}}</span>
+            <span>{{codeGame}}</span>
+        </div>
+        {{/games}}
+    </div>
+</div>
+</body>
+</html>
